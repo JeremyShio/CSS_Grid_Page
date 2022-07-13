@@ -1,5 +1,5 @@
 body{
-    background-color: darkslateblue;
+    background-color:blueviolet;
     color:white
 }
 
@@ -11,12 +11,25 @@ body{
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "navbar navbar navbar navbar navbar navbar"
-      ". prof-pic prof-info prof-info prof-info ."
-      ". posts posts posts posts .";
-  }
+    "navbar navbar navbar navbar navbar navbar"
+    ". prof-pic prof-info prof-info prof-info ."
+    ". posts posts posts posts .";
+}
   
-  .navbar { grid-area: navbar; }
+.navbar { 
+    display:flex;
+    grid-area: navbar;
+    background-color:rgb(255, 230, 246); 
+    position: sticky;
+    justify-content: space-evenly;
+    top: 0;
+    align-items: center;
+}
+
+.navbar > a {
+    color:white;
+    text-decoration:none;
+}
   
   .prof-pic { grid-area: prof-pic; }
   
